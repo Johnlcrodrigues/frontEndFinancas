@@ -1,0 +1,44 @@
+.item {
+    background-color: #f3f0f0;
+    margin-bottom: 8px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 2px 4px 4px #0000009F;
+    
+}
+
+.tabela {
+    background-color: #f3f0f0;
+    margin-bottom: 8px;
+    padding: 4%;
+    box-shadow: 2px 4px 4px #0000009F;
+ 
+    /* margin-bottom: 8px; */
+}
+
+.fundo{
+    background-image: linear-gradient(45deg,rgb(194, 178, 178), rgb(75, 67, 68));
+    height: 100vh;
+  
+   
+}
+
+#fundo{
+    background-color: lightgray;
+   
+}
+.despesas{ 
+    border-radius: 15px;
+    padding: 15px;
+    float:left;
+}
+.receitas{ 
+    border-radius: 15px;
+    padding: 15px;
+    float:right;
+}
+.total{ 
+    top: 50%;
+   
+    
+}
