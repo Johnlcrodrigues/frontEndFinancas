@@ -20,7 +20,7 @@ function ComponenteNav() {
             <Link className="navbar-item" to="/despesas">
               Despesas
             </Link>
-            <div className="navbar-end">
+            <div className="navbar-end"  style={{ width: "1020px" }}>
             <Link className="navbar-item" to="/login">
               logout
             </Link>

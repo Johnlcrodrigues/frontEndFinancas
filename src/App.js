@@ -8,12 +8,10 @@ function App() {
 	const [ totalDespesas, setTotalDespesas ] = useState(1);
 	const [ totalReceitas, setTotalReceitas ] = useState(2)
 
-	useEffect(() => { console.log(totalDespesas)}, [totalDespesas]);
-
 	return (
 		<>
 			<ComponenteNav />
-			<Outlet context={{ totalDespesas, setTotalDespesas, totalReceitas, setTotalReceitas }} />
+			<Outlet className='fundo' context={{ totalDespesas, setTotalDespesas, totalReceitas, setTotalReceitas }} />
 		</>
 	);
 }

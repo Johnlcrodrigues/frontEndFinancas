@@ -7,7 +7,7 @@ async function buscarReceitas() {
   const res = await fetch('http://localhost:3000/receitas');
   const dados = await res.json();
 
-  if(res.status ===200){
+  if (res.status === 200){
     return dados.receitas;
   }else{
     toast(dados.msg);
