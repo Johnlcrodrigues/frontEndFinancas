@@ -40,8 +40,8 @@ function ComponenteNav() {
             </Link>
 
             <div className="navbar-end" style={{ width: "620px" }}>
-              <Link className="navbar-item" to="/login">
-                <img alt="logout" style={{ width: "150px"}} src={"./navbar/logout.png"}></img>   
+              <Link to="/login">
+                <img alt="logout" style={{ width: "100px"}} src={"./navbar/logout.png"}></img>   
               </Link>
             </div>
           </div>
