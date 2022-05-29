@@ -33,12 +33,12 @@ function ComponenteLogin() {
   };
 
   return (
-    <div className='fundo'>
+    <div className='login'>
       <div className='row'>
         <div className='mt-4 d-flex justify-content-center'>
-          <div className='p-4 card' id='fundo'>
-            <h5 className="card-title">Acessar Sistema</h5>
-            <div className='card-body'>
+          <div className='p-4 card' id='loginInput'>
+            <h5 className="card-title" id='textoLogin'>Acessar Sistema</h5>
+            <div className='card-body' id='textoLogin'>
               <div className='mb-2'>
                 <label>Usuário</label>
                 <input className='form-control' value={usuario} onChange={(e) => setUsuario(e.target.value)}></input>
@@ -47,7 +47,7 @@ function ComponenteLogin() {
                 <label>Senha</label>
                 <input className='form-control' type='password' value={senha} onChange={(e) => setSenha(e.target.value)}></input>
               </div>
-              <button className='btn btn-primary' onClick={logarUsuario}>Entrar</button>
+              <button className='btn btn-primary' id='botao' onClick={logarUsuario}>Entrar</button>
             </div>
           </div>
         </div>

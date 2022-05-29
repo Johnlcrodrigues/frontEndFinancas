@@ -1,33 +1,43 @@
 import "../App.css";
 import { Link } from "react-router-dom";
+import componente from"./componente.css";
 
 function ComponenteNav() {
   return (
     <>
-      <nav className="navbar is-dark has-shadow	">
+     <div className='nav'>
+      <nav className="navbar is-transparent">
         <div className="navbar-menu ">
           <div className="navbar-start">
-            <div></div>
-            <Link className="navbar-item" to="/">
-              Home
+          
+            <Link  to="/" style={{ width: "110px" }}>
+                  
             </Link>
-            <Link className="navbar-item" to="/usuario">
-              Usuario
+            <Link className="navbar-item" to="/" style={{ width: "90px" }}>
+              HOME
             </Link>
-            <Link className="navbar-item" to="/receitas">
-              Receitas
+            
+            <Link className="navbar-item" to="/receitas" style={{ width: "110px" }}>
+              RECEITAS
             </Link>
             <Link className="navbar-item" to="/despesas">
-              Despesas
+              DESPESAS
             </Link>
-            <div className="navbar-end"  style={{ width: "1020px" }}>
+            <Link className="navbar-item" to="/" style={{ width: "100px" }}>
+              SALDO
+            </Link>
+            <Link className="navbar-item" to="/usuario" style={{ width: "100px" }}>
+              USUÁRIO
+            </Link>
+            <div className="navbar-end"  style={{ width: "900px" }}>
             <Link className="navbar-item" to="/login">
-              logout
+              LOGOUT
             </Link>
             </div>
           </div>
         </div>
       </nav>
+      </div>
     </>
   );
 }

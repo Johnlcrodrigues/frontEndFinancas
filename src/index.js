@@ -12,6 +12,7 @@ import ComponenteCadastrarUsuario from './componentes/ComponenteCadastrarUsuario
 import 'react-toastify/dist/ReactToastify.css';
 import ComponenteReceitas from './componentes/ComponenteReceitas';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

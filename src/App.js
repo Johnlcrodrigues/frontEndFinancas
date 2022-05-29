@@ -1,6 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import ComponenteNav from './componentes/ComponenteNav';
+import ComponenteNav2 from './componentes/ComponenteNav2';
 import { Outlet } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
@@ -11,7 +12,8 @@ function App() {
 	return (
 		<>
 			<ComponenteNav />
-			<Outlet className='fundo' context={{ totalDespesas, setTotalDespesas, totalReceitas, setTotalReceitas }} />
+			{/* <ComponenteNav2 /> */}
+			<Outlet context={{ totalDespesas, setTotalDespesas, totalReceitas, setTotalReceitas }} />
 		</>
 	);
 }

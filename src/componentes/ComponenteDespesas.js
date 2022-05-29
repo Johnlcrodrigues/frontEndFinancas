@@ -3,6 +3,8 @@ import '../App';
 import 'bootstrap/dist/css/bootstrap.css';
 import { ComponenteRetornaDespesas, buscarDespesas } from './ComponenteRetornaDespesas';
 import { toast } from 'react-toastify';
+import './componente.css';
+
 
 function ComponenteDespesas(props) {
   const [nome, setNome] = useState('');
@@ -83,8 +85,9 @@ function ComponenteDespesas(props) {
 
   return (
     <>
+      
       <div className='container' >
-        <div className='mt-4 d-flex content-left' >
+        <div className='mt-4 d-flex content-left' id='novo'>
           <ComponenteRetornaDespesas setTotalDespesas={props.setTotalDespesas} setId={setId} setNome={setNome} setValor={setValor} despesas={despesas} />
           <div className='p-4 card' id='fundo'>
             <h5 className="card-title" id='fundo' align="Center">Cadastrar Despesa</h5>

@@ -17,28 +17,96 @@
 }
 
 .fundo{
-    background-image: linear-gradient(45deg,rgb(194, 178, 178), rgb(75, 67, 68));
+    /* background-color: #c5e6e6b4; */
+    position: relative;
+    top: 0px;
+    background-image: url(./principal.png);
     height: 100vh;
-  
+    width: 100vw;
+    background-size: cover;
+   
+}
+.login{
+    /* background-image: url(./backNovo.jpg); */
+    background-image: url(./jrlogin.png);
+    /* position: relative;    */
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    
+}
+#loginInput{
+    background-color: #c5ccc5ad;
+    border-radius: 10px;
+    text-align: center;
+    top: 50%;
+    
+}
+.nav{
+    position: absolute;
+    top: 30px;
+    background-color: #f3f0f0;
+    margin-bottom: 8px;
+    cursor: pointer;
+    box-shadow: 2px 4px 4px #0000009F;
+    
+    /* top:50%; */
+    
+}
+
+
+#fundo{
+    background-color: #05050cce;
+    border-radius: 10px;
+    text-decoration-color: white;
+    /* top: 50%; */
+    /* left: 50%; */
+   
+}
+#botao{
+    background-color: #00FF40;
+   border-color: #A0C9D9;
    
 }
 
-#fundo{
-    background-color: lightgray;
-   
+
+#textoLogin{
+    
+   text-decoration-color: #000000fb;
+   font-weight: bold;
+   font-size: 20px;
 }
 .despesas{ 
     border-radius: 15px;
     padding: 15px;
-    float:left;
+    /* float:left; */
 }
 .receitas{ 
     border-radius: 15px;
     padding: 15px;
-    float:right;
+    /* float:right; */
 }
 .total{ 
     top: 50%;
    
+    
+}
+.novo{ 
+    margin: 0%;
+    width: 550px;
+    height: 300px;
+    text-decoration-color: white;
+    left: 50%;
+    top: 50%;
+    background-image: linear-gradient(45deg,rgb(194, 178, 178), rgb(75, 67, 68));
+    
+    
+}
+#novo{ 
+    width: 550px;
+    left: 50%;
+    top: 50%;
+    
+    
     
 }
