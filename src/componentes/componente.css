@@ -18,9 +18,9 @@
 
 .fundo{
     /* background-color: #c5e6e6b4; */
-    position: relative;
+    /* position: relative; */
     top: 0px;
-    background-image: url(./principal.png);
+    background-image: url(./imagens/fundos/fundoGeral.png);
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -28,7 +28,7 @@
 }
 .login{
     /* background-image: url(./backNovo.jpg); */
-    background-image: url(./jrlogin.png);
+    background-image: url(./imagens/fundos/fundoLogin.png);
     /* position: relative;    */
     height: 100vh;
     width: 100vw;
@@ -40,17 +40,18 @@
     border-radius: 10px;
     text-align: center;
     top: 50%;
-    
 }
-.nav{
-    position: absolute;
-    top: 30px;
-    background-color: #f3f0f0;
-    margin-bottom: 8px;
-    cursor: pointer;
-    box-shadow: 2px 4px 4px #0000009F;
-    
-    /* top:50%; */
+
+#usuarioInput{
+    background-color: #05050cce;
+    border-radius: 10px;
+    text-align: center;
+    /* top: 50%; */
+}
+
+#nav{
+    /* position: absolute; */
+    background-color: #05050c;
     
 }
 
@@ -91,7 +92,7 @@
    
     
 }
-.novo{ 
+/* .novo{ 
     margin: 0%;
     width: 550px;
     height: 300px;
@@ -105,8 +106,18 @@
 #novo{ 
     width: 550px;
     left: 50%;
-    top: 50%;
-    
-    
-    
+    top: 50%;    
+} */
+#principal{
+    background-color: #05050cce;
+    /* border-radius: 10px; */
+    /* text-decoration-color: white; */
+    top: 50%; 
+    /* left: 50%; */
+}
+#componentesFundo{
+    background-image: url(./imagens/fundos/fundoGeral.png);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
 }

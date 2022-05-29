@@ -11,6 +11,7 @@ import ComponenteDespesas from './componentes/ComponenteDespesas';
 import ComponenteCadastrarUsuario from './componentes/ComponenteCadastrarUsuario';
 import 'react-toastify/dist/ReactToastify.css';
 import ComponenteReceitas from './componentes/ComponenteReceitas';
+import ComponenteSobre from './componentes/ComponenteSobre';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -25,6 +26,7 @@ root.render(
             <Route path="/receitas" element={<ComponenteReceitas />}></Route>
             <Route path="/usuario" element={<ComponenteCadastrarUsuario />}></Route>
             <Route path="/despesas" element={<ComponenteDespesas />}></Route>
+            <Route path="/sobre" element={<ComponenteSobre />}></Route>
           </Route>
       </Routes>
     </BrowserRouter>

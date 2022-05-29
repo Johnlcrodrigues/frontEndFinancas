@@ -30,11 +30,10 @@ function ComponenteCadastrarUsuario() {
 
 	return (
 		<>
-			<div className='fundo'>
-				<div className='row'>
+				<div className='row' >
 					<div className='mt-4 d-flex justify-content-center'>
-						<div className='p-4 card'>
-							<h5 className="card-title">Criar Conta</h5>
+						<div className='p-4 card' id='usuarioInput'>
+							<h5 className="card-title" id='usuarioInput'>Criar Conta</h5>
 							<div className='card-body'>
 								<div className='mb-2'>
 									<label>Usuário</label>
@@ -44,12 +43,11 @@ function ComponenteCadastrarUsuario() {
 									<label>Senha</label>
 									<input className='form-control' type='password' value={senha} onChange={(e) => setSenha(e.target.value)}></input>
 								</div>
-								<button className='btn btn-primary' onClick={criarUsuario}>Criar Conta</button>
+								<button className='btn btn-primary' id='botao' onClick={criarUsuario}>Criar Conta</button>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 		</>
 	);
 }

@@ -85,7 +85,7 @@ function ComponenteReceitas(props) {
 	return (
 		<>
 			<div className='container'>
-				<div className='mt-4 d-flex content-right'>
+				<div className='mt-4 d-flex justify-content-center'>
 					<ComponenteRetornaReceitas setTotalReceitas={props.setTotalReceitas} setId={setId} setNome={setNome} setValor={setValor} receitas={receitas} />
 					<div className='p-4 card' id='fundo'>
 						<h5 className="card-title" id='fundo' align="Center">Cadastrar Receitas</h5>
@@ -101,9 +101,9 @@ function ComponenteReceitas(props) {
 						</div>
 						<br />
 						<div className='p-4 card' id='fundo'>
-							<button className='btn btn-primary' onClick={criarReceita} >Criar</button> <br />
-							<button className='btn btn-primary' onClick={editarReceita} >Editar</button>  <br />
-							<button className='btn btn-primary' onClick={deletarReceita} >Excluir</button>
+							<button className='btn btn-primary' id='botao' onClick={criarReceita} >Criar</button> <br />
+							<button className='btn btn-primary' id='botao' onClick={editarReceita} >Editar</button>  <br />
+							<button className='btn btn-primary' id='botao' onClick={deletarReceita} >Excluir</button>
 						</div>
 					</div>
 				</div>

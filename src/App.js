@@ -11,9 +11,11 @@ function App() {
 
 	return (
 		<>
+		<div className='fundo'>
 			<ComponenteNav />
 			{/* <ComponenteNav2 /> */}
-			<Outlet context={{ totalDespesas, setTotalDespesas, totalReceitas, setTotalReceitas }} />
+			<Outlet id='componentesFundo' context={{ totalDespesas, setTotalDespesas, totalReceitas, setTotalReceitas }} />
+			</div>
 		</>
 	);
 }

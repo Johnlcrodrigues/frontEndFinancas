@@ -22,7 +22,7 @@ function ComponenteDespesas(props) {
         headers: { 'Content-Type': 'application/json' }
       }
     );
-    
+
     const dados = await res.json();
 
     if (res.status === 201) {
@@ -85,31 +85,30 @@ function ComponenteDespesas(props) {
 
   return (
     <>
-      
-      <div className='container' >
-        <div className='mt-4 d-flex content-left' id='novo'>
-          <ComponenteRetornaDespesas setTotalDespesas={props.setTotalDespesas} setId={setId} setNome={setNome} setValor={setValor} despesas={despesas} />
-          <div className='p-4 card' id='fundo'>
-            <h5 className="card-title" id='fundo' align="Center">Cadastrar Despesa</h5>
+        <div className='container' >
+          <div className="mt-4 d-flex justify-content-center">
+            <ComponenteRetornaDespesas setTotalDespesas={props.setTotalDespesas} setId={setId} setNome={setNome} setValor={setValor} despesas={despesas} />
             <div className='p-4 card' id='fundo'>
-              <div className='mb-2'>
-                <label>Nome</label>
-                <input className='form-control' value={nome} onChange={(e) => setNome(e.target.value)}></input>
+              <h5 className="card-title" id='fundo' align="Center">Cadastrar Despesa</h5>
+              <div className='p-4 card' id='fundo'>
+                <div className='mb-2'>
+                  <label>Nome</label>
+                  <input className='form-control' value={nome} onChange={(e) => setNome(e.target.value)}></input>
+                </div>
+                <div className='mb-2'>
+                  <label>Valor</label>
+                  <input className='form-control' type='number' value={valor} onChange={(e) => setValor(e.target.value)}></input>
+                </div>
               </div>
-              <div className='mb-2'>
-                <label>Valor</label>
-                <input className='form-control' type='number' value={valor} onChange={(e) => setValor(e.target.value)}></input>
+              <br />
+              <div className='p-4 card' id='fundo'>
+                <button className='btn btn-primary' onClick={criarDespesa} id='botao'>Criar</button> <br />
+                <button className='btn btn-primary' onClick={editarDespesa} id='botao'>Editar</button>  <br />
+                <button className='btn btn-primary' onClick={deletarDespesa} id='botao'>Excluir</button>
               </div>
-            </div>
-            <br />
-            <div className='p-4 card' id='fundo'>
-              <button className='btn btn-primary' onClick={criarDespesa} >Criar</button> <br />
-              <button className='btn btn-primary' onClick={editarDespesa} >Editar</button>  <br />
-              <button className='btn btn-primary' onClick={deletarDespesa} >Excluir</button>
             </div>
           </div>
         </div>
-      </div>
     </>
   );
 }
