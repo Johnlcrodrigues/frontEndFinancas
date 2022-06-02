@@ -41,7 +41,7 @@ function ComponenteRetornaReceitas(props) {
 
   return (
     <div id='fundo' className='p-4 card'>
-      <h5 align="center" className="card-title">Receitas Cadastradas</h5>
+      <h5 align="center" className="card-title" id='fundo'>Receitas Cadastradas</h5>
       <div className='container'>
         <div className="row">
           <div className="col-sm">
@@ -71,8 +71,8 @@ function ComponenteRetornaReceitas(props) {
             </div>
           )
         })}
-      <table class="table table-striped table-hover">
-        <thead align="center" >
+      <table class="table table-striped table-hover" id='tabela'>
+        <thead id='tabela' align="center" >
           <th scope="col">TOTAL</th>
           <th scope="col">R${totalRec}</th>
         </thead>

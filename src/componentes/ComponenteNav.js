@@ -13,7 +13,7 @@ function ComponenteNav() {
               
             </div> */}
             <Link  to="/">
-                <img alt="logo" style={{ width: "120px"}} src={"./navbar/logo.png"}></img>
+                <img alt="logo" style={{ width: "40px"}} src={"./navbar/logo.png"}></img>
               </Link>
             <Link  to="/">
             <img alt="home" style={{ width: "100px"}} src={"./navbar/home.png"}></img>
@@ -27,7 +27,7 @@ function ComponenteNav() {
             <img alt="despesa" style={{ width: "100px"}} src={"./navbar/despesa.png"}></img>   
             </Link>
 
-            <Link to="/">
+            <Link to="/saldo">
             <img alt="saldo" style={{ width: "100px"}} src={"./navbar/saldo.png"}></img>   
             </Link>
 
@@ -39,7 +39,7 @@ function ComponenteNav() {
             <img alt="quemSomos" style={{ width: "100px"}} src={"./navbar/sobre.png"}></img>   
             </Link>
 
-            <div className="navbar-end" style={{ width: "620px" }}>
+            <div className="navbar-end" style={{ width: "720px" }}>
               <Link to="/login">
                 <img alt="logout" style={{ width: "100px"}} src={"./navbar/logout.png"}></img>   
               </Link>

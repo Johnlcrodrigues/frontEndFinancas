@@ -1,18 +1,20 @@
 .item {
-    background-color: #f3f0f0;
+    background-color: #7272726b;
     margin-bottom: 8px;
     position: relative;
     cursor: pointer;
     box-shadow: 2px 4px 4px #0000009F;
+    color: white;
     
 }
 
 .tabela {
-    background-color: #f3f0f0;
+    background-color: #7272726b;
     margin-bottom: 8px;
     padding: 4%;
     box-shadow: 2px 4px 4px #0000009F;
- 
+    color: white;
+
     /* margin-bottom: 8px; */
 }
 
@@ -55,11 +57,17 @@
     
 }
 
-
-#fundo{
+#saldo{
+    color: white;
     background-color: #05050cce;
+}
+#fundo{
+    
+    color: white;
+    /* text-decoration-color: ; */
+    background-color: #05050c93;
     border-radius: 10px;
-    text-decoration-color: white;
+   
     /* top: 50%; */
     /* left: 50%; */
    
@@ -80,34 +88,19 @@
 .despesas{ 
     border-radius: 15px;
     padding: 15px;
-    /* float:left; */
+    float:left;
 }
 .receitas{ 
     border-radius: 15px;
     padding: 15px;
-    /* float:right; */
+    float:right;
 }
 .total{ 
     top: 50%;
    
     
 }
-/* .novo{ 
-    margin: 0%;
-    width: 550px;
-    height: 300px;
-    text-decoration-color: white;
-    left: 50%;
-    top: 50%;
-    background-image: linear-gradient(45deg,rgb(194, 178, 178), rgb(75, 67, 68));
-    
-    
-}
-#novo{ 
-    width: 550px;
-    left: 50%;
-    top: 50%;    
-} */
+
 #principal{
     background-color: #05050cce;
     /* border-radius: 10px; */

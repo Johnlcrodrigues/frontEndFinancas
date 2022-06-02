@@ -41,7 +41,7 @@ function ComponenteRetornaDespesas(props) {
 
   return (
     <div id='fundo' className='p-4 card'>
-      <h5 align="center" className="card-title">Despesas Cadastradas</h5>
+      <h5 align="center" className="card-title" id='fundo'>Despesas Cadastradas</h5>
       <div className='container'>
         <div className="row">
           <div className="col-sm">

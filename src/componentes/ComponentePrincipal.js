@@ -12,29 +12,12 @@ function ComponentePrincipal() {
   const total = parseFloat(totalReceitas - totalDespesas);
   return (
     <>
-
-
-      <div className='p-4 card' id="principal">
-      <h5 id="total">TOTAL RECEITAS: R${totalReceitas}</h5>
-      <h5 id="total">TOTAL DESPESAS: R${totalDespesas}</h5>
-        <h5 id="total">SALDO: R${total}</h5>
-        </div>
-        <div className='despesas'>
-          {/* <ComponenteDespesas setTotalDespesas={setTotalDespesas} /> */}
-        </div>
-        {/* <div className='receitas'>
-          <ComponenteReceitas setTotalReceitas={setTotalReceitas} />
-        </div> */}
-        <br />
-        <br />
-        {/* <div className='p-4 card' id="fundo">
-          <h5 id="total">Você ainda tem: R${total}</h5>
-        </div> */}
-        
-        
-
-     
-   
+      <div className='despesas'>
+        <ComponenteDespesas setTotalDespesas={setTotalDespesas} />
+      </div>
+      <div className='receitas'>
+        <ComponenteReceitas setTotalReceitas={setTotalReceitas} />
+      </div>
     </>
   )
 }
